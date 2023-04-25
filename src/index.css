@@ -1,13 +1,120 @@
-body {
+
+body{
+  font-family: 'Karla', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  width: 550px;
+  margin: 20px auto;
+}
+
+.header--container{
+  width: 550px;
+  height: 70px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo--box{
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.logo--img{
+  width: 31px;
+  height: 24px;
+  padding-right: 10px ;
+}
+
+.logo--text{
+  color:white;
+  font-weight: bold;
+}
+
+
+.header--text{
+  color: white;
+  font-size:12px;
+  font-weight: 500;
+  line-height: 14.5px;
+  margin-right: 25px;
+
+}
+
+.meme--container{
+  padding: 36px;
+}
+
+.form{
+  display: grid;
+  grid-template: 40px 40px/ 1fr 1fr;
+  gap: 15px;
+}
+
+.form--input{
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+
+}
+
+.form--btn{
+  grid-column: 1/-1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.memeImage{
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+}
+
+.meme{
+    position: relative;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
